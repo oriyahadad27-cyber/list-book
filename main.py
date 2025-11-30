@@ -30,3 +30,4 @@ def delete_book(book_id: int):
    books.remove(book)
  return {"message": "Book deleted"}
  raise HTTPException(status_code=404, detail="Book not found")
+#force divergence
