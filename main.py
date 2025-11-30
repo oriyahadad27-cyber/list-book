@@ -19,6 +19,8 @@ def add_book(book: dict):
   "id": counter,
   "title": book.get("title"),
   "author": book.get("author"),
+  "year": book.get("year"),
+
  }
  books.append(new_book)
  counter += 1
@@ -30,3 +32,5 @@ def delete_book(book_id: int):
    books.remove(book)
  return {"message": "Book deleted"}
  raise HTTPException(status_code=404, detail="Book not found")
+#force divergence
+#force divergence
